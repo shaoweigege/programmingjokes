@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 
-	import { Stretch } from "svelte-loading-spinners";
+	import { Circle2 } from "svelte-loading-spinners";
 	const fetchJoke = () => {
 		joke = "";
 		loading.removeAttribute("hidden");
@@ -28,9 +28,9 @@
 
 <div class="container">
 	<center>
-		<button class="btn btn-danger" on:click={fetchJoke}>Another one</button><br /><br />
+		<button class="btn btn-danger" on:click={fetchJoke}>Another one</button><br /><br /><br /><br />
 		<div hidden id="loading">
-			<Stretch size="60" color="#FF3E00" unit="px" />
+			<Circle2 size="60" color="#FF3E00" unit="px" />
 		</div>
 		<h1>{joke}</h1>
 	</center>
